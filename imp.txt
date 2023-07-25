@@ -1,0 +1,35 @@
+Connect SQL with 
+
+1] First download mySQl server + workbench + shell
+by downloading it from the original server.
+
+In CMD → mysql -u root -p (To start local mysql server)
+
+Important Commands.
+
+Assigning other user to carry out operations :- 
+
+Here are the steps :- 
+1] CREATE USER 'sqluser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+(Create a user which will use password called password).
+
+2] GRANT ALL PRIVILEGES ON *.* TO 'sqluser'@'localhost';
+(Grants all privileges to the assigned / created user).
+
+3] FLUSH PRIVILEGES;
+(Validate all privileges)
+
+In creating a connection is VSCode :- 
+You have to use the username and password you have created in 
+MqSQL workbench + else it won't work.
+
+
+CTRL + E , To run a specific block of sql code.
+
+Before storing any table , make sure that
+you call the command : USE table_name
+
+FOREIGN KEY --> using some attributes in the child
+derving from the parent.
+
+FOREIGN KEY in a table --> it is a child of some parent.
