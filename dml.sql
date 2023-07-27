@@ -17,3 +17,8 @@ UPDATE customer
 SET Pincode = 11000;
 UPDATE customer
 SET Pincode = Pincode + 1;
+-- DELETE COMMAND
+DELETE FROM customer
+WHERE id = 121;
+-- To delete the entire table
+DELETE from
