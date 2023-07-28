@@ -54,3 +54,16 @@ SELECT e.fname,
     p.pname
 from employee AS e
     CROSS JOIN project AS p;
+-- Alernative of performing the INNER JOIN Operation is
+/*
+ Syntax is quite similar to the INNER JOIN , only change we have 
+ to make is using WHERE Clause.
+ */
+SELECT E.emp_id,
+    E.fname,
+    E.lname,
+    P.id,
+    P.pname
+FROM employee AS E,
+    project AS P
+WHERE e.emp_id = p.empId;
